@@ -1,0 +1,34 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "target": "ES2020",
+        "noImplicitAny": true,
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "outDir": "dist",
+        "baseUrl": ".",
+        "lib": ["ES2020"],
+        "allowJs": true,
+        "checkJs": true,
+        "paths": {
+            "*": [
+                "node_modules/*",
+                "src/types/*"
+            ],
+            "@config/*": ["./src/config/*","./src/config/"],
+            "types/*": ["./src/types/*"],
+            "@controllers/*": ["./src/controllers/*"],
+            "@models/*": ["./src/models/*"],
+            "@exceptions/*": ["./src/exceptions/*"],
+            "@midlewares/*": ["./src/midlewares/*"],
+            "@services/*": ["./src/services/*"],
+            "@util/*": ["./src/util/*"]
+
+        }
+    },
+    "include": [
+        "src/**/*"
+    ]
+}
